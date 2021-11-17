@@ -791,7 +791,7 @@
 
 //#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
 
-//#define QUICK_HOME                          // If G28 contains XY do a diagonal move first
+#define QUICK_HOME                            // If G28 contains XY do a diagonal move first
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
 //#define HOME_Z_FIRST                        // Home Z first. Requires a Z-MIN endstop (not a probe).
 //#define CODEPENDENT_XY_HOMING               // If X/Y can't home without homing Y/X first
@@ -3710,13 +3710,13 @@
   //#define CUSTOM_MENU_MAIN_SCRIPT_RETURN   // Return to status screen after a script
   #define CUSTOM_MENU_MAIN_ONLY_IDLE         // Only show custom menu when the machine is idle
 
-  #define MAIN_MENU_ITEM_1_DESC "Home X&Y"
+  #define MAIN_MENU_ITEM_1_DESC "Home X & Y"
   #define MAIN_MENU_ITEM_1_GCODE "G28 X Y"
 
   #define MAIN_MENU_ITEM_2_DESC "Home Z Axis"
   #define MAIN_MENU_ITEM_2_GCODE "G28 Z"
 
-  #define MAIN_MENU_ITEM_3_DESC "Reset All Coordinates"
+  #define MAIN_MENU_ITEM_3_DESC "Set Loc to Zero"
   #define MAIN_MENU_ITEM_3_GCODE "G92 X0 Y0 Z0"
 
   //#define MAIN_MENU_ITEM_1_DESC "Home & UBL Info"
